@@ -9,11 +9,12 @@ My Project is a Python package that extends the json.JSONEncoder and json.JSONDe
 
 ### Coding example
 from jsonapi import jsonapi
+
 complex_num = complex(2.0, 3.0)
 complex_json = dumps(complex_num)
 print("Encoded Complex JSON:", complex_json)
 
-decoded_complex = loads(complex_json)
+decoded_complex = loads(complex_json) 
 print("Decoded Complex Number:", decoded_complex)
 
 #### Installation
@@ -21,5 +22,5 @@ print("Decoded Complex Number:", decoded_complex)
 You can install My Project using pip:
 
 ```shell
-pip install jsonapi
+pip install -e
 
