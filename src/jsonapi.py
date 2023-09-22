@@ -12,7 +12,7 @@ class CustomEncoder(json.JSONEncoder):
 class CustomDecoder(json.JSONDecoder):
     def decode(self, s):
         obj = super().decode(s)
-        # Customize JSON deserialization here for custom data types
+        # Customize JSON deserialization for custom data types
         if "__complex__" in obj:
             return complex(obj["real"], obj["imag"])
         elif "__range__" in obj:

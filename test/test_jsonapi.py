@@ -1,8 +1,10 @@
+import sys
+sys.path.append(".")
+
 import unittest
-from jsonapi import CustomEncoder, CustomDecoder, dumps, loads
+from src.jsonapi import CustomEncoder, CustomDecoder, dumps, loads
 
 class TestJSONAPI(unittest.TestCase):
-
     def test_custom_encoder_complex(self):
         # Test encoding a complex number
         obj = complex(1, 2)
